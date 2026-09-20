@@ -19,6 +19,7 @@ const Settings = lazy(() => import("@/pages/Settings").then((m) => ({ default: m
 const Alerts = lazy(() => import("@/pages/Alerts").then((m) => ({ default: m.Alerts })));
 const Reports = lazy(() => import("@/pages/Reports").then((m) => ({ default: m.Reports })));
 const Complaints = lazy(() => import("@/pages/Complaints").then((m) => ({ default: m.Complaints })));
+const EdgeNodes = lazy(() => import("@/pages/EdgeNodes").then((m) => ({ default: m.EdgeNodes })));
 const AboutSystem = lazy(() => import("@/pages/AboutSystem").then((m) => ({ default: m.AboutSystem })));
 
 function PageFallback() {
@@ -47,6 +48,7 @@ function App() {
             <Route path="/alerts" element={<Alerts />} />
             <Route path="/reports" element={<Reports />} />
             <Route path="/maintenance" element={<Maintenance />} />
+            <Route path="/edge-nodes" element={<EdgeNodes />} />
             <Route path="/docs" element={<Docs />} />
             <Route path="/complaints" element={<Complaints />} />
             <Route path="/about" element={<AboutSystem />} />
